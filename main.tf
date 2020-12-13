@@ -23,6 +23,6 @@ resource "ibm_resource_instance" "cos" {
 resource "ibm_cos_bucket" "bucket" {
   bucket_name          = "${var.storage_name}-${var.environment}"
   resource_instance_id = ibm_resource_instance.cos.id
-  single_site_location = var.ibmcloud_region
+  single_site_location = "ams03"
   storage_class        = "standard"
 }
