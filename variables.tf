@@ -20,7 +20,7 @@ variable "storage_name" {
 
 variable "ibmcloud_region" {
     description = "Preferred IBM Cloud region to use for your infrastructure"
-    default = "us-east"
+    default = "us-south"
 }
 
 variable "cloudobjectstorage_plan" {
