@@ -17,6 +17,27 @@ variable "storage_name" {
     description = "Nombre de bucket"
 }
 
+# variable "ibmcloud_api_key" {}
+
+variable "ibmcloud_region" {
+    description = "Preferred IBM Cloud region to use for your infrastructure"
+    default = "us-east"
+}
+variable "environment_name" {
+    description = "resource group name"
+    default = "blueprint_base"
+}
+
+variable "cloudobjectstorage_plan" {
+    description = "Plan for Cloud Object Storage: lite or standard"
+    default="standard"
+}
+
+variable "cloudobjectstorage_location" {
+    description = "Find available locations with: ibmcloud catalog service cloud-object-storage"
+    default = "global"
+}    
+
 /*
 variable "function_namespace" {
     default = "devops_prod"
